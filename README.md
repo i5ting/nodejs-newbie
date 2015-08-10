@@ -12,7 +12,9 @@
 快捷键
 
     ctrl + p
-  
+
+在终端里使用subl命令打开文件，（如果是mac，需要安装https://github.com/i5ting/subl）
+
 ### 安装ack，命令行查找代码
 
 http://beyondgrep.com/install/
@@ -73,3 +75,43 @@ https://cnodejs.org/topic/55c44f0db98f51142b367b54
 在dash里默认是没有的；
 
 see here ： http://kapeli.com/docset_links
+
+### mongo here 
+
+当前目录启动mongodb
+
+在新建目录执行
+
+    mh
+    
+它会创建tmp目录
+
+全局启动mongodb
+
+    mhg
+    
+它会创建~/mongo/目录，当前用户下起mongo服务，即用户下全局共享
+
+https://github.com/i5ting/mongo-here
+
+### json editor 
+
+    [sudo] npm install -g je
+    je
+
+详见https://github.com/i5ting/je
+
+### json to csv converter
+
+    [sudo] npm install -g j2csv
+    json2csv
+    
+详见https://github.com/i5ting/json2csv
+
+
+### kp is a tool for kill process by server port
+
+    [sudo]npm install -g kp
+    kp 3002
+
+https://github.com/i5ting/kp
