@@ -17,7 +17,7 @@
 
 在终端里使用subl命令打开文件，（如果是mac，需要安装https://github.com/i5ting/subl）
 
-  subl app.js
+    subl app.js
   
 快速定位到某一行
 
