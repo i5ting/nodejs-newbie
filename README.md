@@ -116,7 +116,11 @@ https://github.com/i5ting/mongo-here
 
 https://github.com/i5ting/kp
 
+### upload-cli
 
+a node cli tools for uploads ui
+
+https://github.com/i5ting/upload-cli
 
 ## Contributing
 
