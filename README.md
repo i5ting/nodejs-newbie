@@ -7,14 +7,22 @@
 
 ## Tips
 
-### 使用sublime的快速打开文件
+### 编辑器
 
-快捷键
+只允许文本编辑器，不准使用任何IDE
+
+使用sublime的快速打开文件
 
     ctrl + p
 
 在终端里使用subl命令打开文件，（如果是mac，需要安装https://github.com/i5ting/subl）
 
+  subl app.js
+  
+快速定位到某一行
+
+    ctrl + g
+    
 ### 安装ack，命令行查找代码
 
 http://beyondgrep.com/install/
