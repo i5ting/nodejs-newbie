@@ -4,6 +4,7 @@
 
 - ubuntu
 - sublime text3
+- 编码风格 https://github.com/dead-horse/node-style-guide
 
 ## Tips
 
@@ -13,7 +14,7 @@
 
 使用sublime的快速打开文件
 
-    ctrl + p
+    ctrl + p（mac是command + T）
 
 在终端里使用subl命令打开文件，（如果是mac，需要安装https://github.com/i5ting/subl）
 
@@ -21,7 +22,7 @@
   
 快速定位到某一行
 
-    ctrl + g
+    ctrl + g （mac是command + L）
     
 ### 安装ack，命令行查找代码
 
@@ -32,11 +33,18 @@ Ubuntu
     
 - Package "ack-grep"
 
+Mac
+
+- brew install ack
+
 ### 使用mongo-express操作mongodb
 
 https://github.com/andzdroid/mongo-express
 
 欢迎推荐ubuntu下更好的mongo客户端
+
+mac推荐 www.robomongo.org 
+ 
 
 ### 使用node-inspector调试代码
 
@@ -80,9 +88,11 @@ https://cnodejs.org/topic/55c44f0db98f51142b367b54
 
 - http://zealdocs.org/ (推荐，离线下载)
 
-在dash里默认是没有的；
+有很多doc在dash（mac）里默认是没有的；
 
 see here ： http://kapeli.com/docset_links
+
+如果是下载到本地的docset，放到zealdocs目录下面，需要重启zeal
 
 ### mongo here 
 
