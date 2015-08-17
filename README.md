@@ -23,7 +23,20 @@
 快速定位到某一行
 
     ctrl + g （mac是command + L）
-    
+
+
+### 使用oh-my-zsh
+
+- 官网 http://ohmyz.sh/
+- 代码 https://github.com/robbyrussell/oh-my-zsh
+
+安装步骤
+
+- 先安装zsh
+- 安装oh-my-zsh
+
+以后环境变量在~/.zshrc里
+
 ### 安装ack，命令行查找代码
 
 http://beyondgrep.com/install/
@@ -36,6 +49,38 @@ Ubuntu
 Mac
 
 - brew install ack
+
+### 使用autojump跳转目录
+
+https://github.com/wting/autojump
+
+Linux
+
+    sudo apt-get install autojump
+    
+Mac os
+
+    brew install autojump
+    
+需要修改~/.zshrc里的plugin,修改为
+
+    plugins=(git autojump)
+
+然后
+
+    source ~/.zshrc
+    
+至此，已经完成了安装。
+
+此后cd到任意目录，以后就可以使用j这个直达到某个目录了，下面是示例：
+
+    ➜  nodejs-newbie git:(master) ✗ cd ~/workspace/github/nodejs-newbie
+    ➜  nodejs-newbie git:(master) ✗ cd ~
+    ➜  ~  j nodejs-n
+    /Users/sang/workspace/github/nodejs-newbie
+    ➜  nodejs-newbie git:(master) ✗ 
+  
+如果想玩的更high，可以参见https://github.com/clvv/fasd
 
 ### 使用mongo-express操作mongodb
 
