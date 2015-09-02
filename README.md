@@ -171,6 +171,14 @@ https://github.com/i5ting/mongo-here
     
 详见https://github.com/i5ting/json2csv
 
+上面给出的方案适合3000条以内的数据，受限于浏览器
+
+更大量的数据，需要
+
+    [sudo] npm install -g ej
+    ej input.json output.csv
+    
+https://github.com/i5ting/ej
 
 ### kp is a tool for kill process by server port
 
@@ -184,6 +192,8 @@ https://github.com/i5ting/kp
 a node cli tools for uploads ui
 
 https://github.com/i5ting/upload-cli
+
+- 目前已经支持通过命令行`uci`上传，可指定host
 
 ## Contributing
 
