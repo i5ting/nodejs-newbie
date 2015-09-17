@@ -84,11 +84,15 @@ Mac os
 
 ### 使用mongo-express操作mongodb
 
-https://github.com/andzdroid/mongo-express
+<!-- https://github.com/andzdroid/mongo-express -->
 
-欢迎推荐ubuntu下更好的mongo客户端
+<!-- 欢迎推荐ubuntu下更好的mongo客户端 -->
 
-mac推荐 www.robomongo.org 
+推荐 www.robomongo.org 
+
+- 支持win
+- 支持linux
+- 支持mac（mac10.10下中文乱码，需要robomongo v0.8.5+）
  
 
 ### 使用node-inspector调试代码
