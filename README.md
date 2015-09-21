@@ -1,5 +1,21 @@
 # Nodejs Newbie
 
+
+## 前端入门的4本书
+
+- 精通CSS+DIV 网页样式与布局 http://product.china-pub.com/35553 
+- 精通CSS：高级Web标准解决方案（第2版）http://product.china-pub.com/196593
+- 锋利的jQuery(第2版) http://product.china-pub.com/3661548
+- GitHub入门与实践 http://product.china-pub.com/4727673
+
+第一本书是傻瓜式的入门的书，老点，但简单，符合国人思维，入门html和css比较合适
+
+第二本书是css领域不错的书，加深理解css，努力成为一个合格的前端
+
+第三本书是jquery的书，也是很简单，为啥没有直接javascript的原因是，jq足够简单，先实习效果，以后再慢慢补js基础即可，如果上来就js，很多人是搞不定的
+
+第四本书是git和github的用法，是版本控制里比较简单的，比较适合入门
+
 ## 要求
 
 - ubuntu
