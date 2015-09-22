@@ -28,6 +28,8 @@
 
 只允许文本编辑器，不准使用任何IDE
 
+- Sublime Text 3
+
 使用sublime的快速打开文件
 
     ctrl + p（mac是command + T）
@@ -39,6 +41,7 @@
 快速定位到某一行
 
     ctrl + g （mac是command + L）
+Sublime Text 3 常用快捷键 ：<https://github.com/mwn-notes/sublime-text-3>
 
 
 ### 使用oh-my-zsh
@@ -53,6 +56,8 @@
 
 以后环境变量在~/.zshrc里
 
+安装教程： <https://github.com/mwn-notes/oh-my-zsh>
+
 ### 安装ack，命令行查找代码
 
 http://beyondgrep.com/install/
@@ -65,6 +70,9 @@ Ubuntu
 Mac
 
 - brew install ack
+
+或使用 sublime 快捷键： <kbd>ctrl + shift + f</kbd>
+也可以基于目录查找代码
 
 ### 使用autojump跳转目录
 
@@ -121,43 +129,68 @@ https://cnodejs.org/topic/55c44f0db98f51142b367b54
 
 ### 学习git用法
 
-常用
+- 使用alias来简化命令输入：
 
-	alias gs='git status'
-	alias gp='git push'
+    	alias gs='git status'
+    	alias gp='git push'
 
-使用alias来简化命令输入
+- 避免每次操作需要输入密码
+
+    在宿主目录下创建文件存储GIT用户名和密码
+    
+        cd ~
+        vim .git-credentials
+            https://username:password@github.com
+            https://username:password@git.oschina.net
+    
+    添加Git Config 内容
+    
+        git config --global credential.helper store
+        
+    执行完后查看~目录下的.gitconfig文件，会多了一项：
+        
+        [credential]
+            helper = store
+                
+    重新开启bash会发现git push时不用再输入用户名和密码
+
+
 
 
 - 重磅推荐peter wang写的 [搬进 Github](http://gitbeijing.com/)
 
-下面给出一些git学习资料
+- 下面给出一些git学习资料
 
-- [git-guide](http://www.bootcss.com/p/git-guide/)
-- [git入门gif演示](https://git.oschina.net/wzw/git-quick-start)
-- [写出好的 commit message](http://ruby-china.org/topics/15737)
-- [github-cheat-sheet](https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md)
-- [分支管理](http://www.juvenxu.com/2010/11/28/a-successful-git-branching-model/)
-- [Git-it Challenges is a terminal based app for learning Git and GitHub](http://jlord.github.io/git-it/)
-- [高富帅们的Git技巧（译）](http://blog.csdn.net/zmlcool/article/details/8682382)
-- [Git 怎样保证fork出来的project和原project（上游项目）同步更新](http://www.tuicool.com/articles/Mnmmqyi)
-- [10.Git之本地忽略](http://blog.csdn.net/kangear/article/details/13169395)
-- [git-flow 备忘清单](http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html)
-- [Git flow 開發流程 ihower](http://ihower.tw/blog/archives/5140)
-- [git bisect](http://www.oschina.net/translate/letting-git-bisect-help-you)
+  - [git-guide](http://www.bootcss.com/p/git-guide/)
+  - [git入门gif演示](https://git.oschina.net/wzw/git-quick-start)
+  - [写出好的 commit message](http://ruby-china.org/topics/15737)
+  - [github-cheat-sheet](https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md)
+  - [分支管理](http://www.juvenxu.com/2010/11/28/a-successful-git-branching-model/)
+  - [Git-it Challenges is a terminal based app for learning Git and GitHub](http://jlord.github.io/git-it/)
+  - [高富帅们的Git技巧（译）](http://blog.csdn.net/zmlcool/article/details/8682382)
+  - [Git 怎样保证fork出来的project和原project（上游项目）同步更新](http://www.tuicool.com/articles/Mnmmqyi)
+  - [10.Git之本地忽略](http://blog.csdn.net/kangear/article/details/13169395)
+  - [git-flow 备忘清单](http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html)
+  - [Git flow 開發流程 ihower](http://ihower.tw/blog/archives/5140)
+  - [git bisect](http://www.oschina.net/translate/letting-git-bisect-help-you)
 
-	$ git update-index --assume-unchanged /path/to/file       #忽略跟踪
+	$ git update-index --assume-unchanged /path/to/file      #忽略跟踪
+
 	$ git update-index --no-assume-unchanged /path/to/file  #恢复跟踪
   
 ### 查询文档
 
-- http://zealdocs.org/ (推荐，离线下载)
+- [zealdocs](http://zealdocs.org/) (推荐，离线下载)
 
-有很多doc在dash（mac）里默认是没有的；
+    有很多doc在dash（mac）里默认是没有的；
+    
+    see here ： http://kapeli.com/docset_links
+    
+    如果是下载到本地的docset，放到zealdocs目录下面，需要重启zeal
 
-see here ： http://kapeli.com/docset_links
+- [DevDocs](http://devdocs.io/)
 
-如果是下载到本地的docset，放到zealdocs目录下面，需要重启zeal
+    一个API文档阅读器,带有稳定有序的界面。
 
 ### mongo here 
 
