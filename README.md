@@ -22,6 +22,11 @@
 - sublime text3
 - 编码风格 https://github.com/dead-horse/node-style-guide
 
+## 安装nodejs
+
+- 使用nvm安装多个版本（0.10.38必须装，其他自便）
+- 使用nrm切换源
+
 ## Tips
 
 ### 编辑器
