@@ -19,7 +19,7 @@
 ## 要求
 
 - ubuntu
-- sublime text3
+- sublime text3（或者vsc https://github.com/i5ting/vsc）
 - 编码风格 https://github.com/dead-horse/node-style-guide
 
 ## 安装nodejs
@@ -45,6 +45,7 @@
 
     ctrl + g （mac是command + L）
 
+- [网上找的](http://my.oschina.net/nodeonly/blog/489463)
 
 ### 使用oh-my-zsh
 
@@ -188,6 +189,29 @@ https://github.com/i5ting/mongo-here
     je
 
 详见https://github.com/i5ting/je
+
+### jade
+
+jade学习
+
+- http://jade-lang.com/reference/
+- https://github.com/i5ting/study-jade
+
+html转jade是比较省力的一种方法
+
+使用场景：尤其是写bootstrap的时候，当然静态页面转jade也一样
+
+hade是一个html2jade.org的copy，平常打开这个网站比较慢，索性还是在本地弄一个，用的时候一条命令打开
+
+    [sudo] npm install -g hade
+    hade
+
+好处
+
+- html和jade互转
+- 对于学习jade是比较好的练习
+
+详见https://github.com/i5ting/hade
 
 ### json to csv converter
 
