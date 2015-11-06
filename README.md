@@ -47,6 +47,22 @@
 
 - [网上找的](http://my.oschina.net/nodeonly/blog/489463)
 
+关于tab配置
+
+```
+{
+    "default_encoding": "UTF-8",
+    "default_line_ending": "unix",
+    "font_size": 10,
+    "rulers":
+    [
+        80
+    ],
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true,
+    "word_wrap": "false"
+}
+```
 ### 使用oh-my-zsh
 
 - 官网 http://ohmyz.sh/
