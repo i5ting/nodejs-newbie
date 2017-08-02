@@ -1,19 +1,113 @@
 # Nodejs Newbie
 
+
+## 前端入门的4本书
+
+- 精通CSS+DIV 网页样式与布局 http://product.china-pub.com/35553 
+- 精通CSS：高级Web标准解决方案（第2版）http://product.china-pub.com/196593
+- 锋利的jQuery(第2版) http://product.china-pub.com/3661548
+- GitHub入门与实践 http://product.china-pub.com/4727673
+
+第一本书是傻瓜式的入门的书，老点，但简单，符合国人思维，入门html和css比较合适
+
+第二本书是css领域不错的书，加深理解css，努力成为一个合格的前端
+
+第三本书是jquery的书，也是很简单，为啥没有直接javascript的原因是，jq足够简单，先实习效果，以后再慢慢补js基础即可，如果上来就js，很多人是搞不定的
+
+第四本书是git和github的用法，是版本控制里比较简单的，比较适合入门
+
 ## 要求
 
 - ubuntu
-- sublime text3
+- sublime text3（或者vsc https://github.com/i5ting/vsc）
+- 编码风格 https://github.com/dead-horse/node-style-guide
+
+## 安装nodejs
+
+- 使用nvm安装多个版本（LTS版本的必须装，其他自便）
+- 使用nrm切换源
+
+## 推荐node学习书籍
+
+![](http://img11.360buyimg.com/n1/jfs/t2500/164/112369100/69685/87527525/55ef92ecN98d5fa4f.jpg)
+
+- Node.js实战（入门必看）
+- 深入浅出Node.js (对原理理解更好) 
+- 其他例子书
 
 ## Tips
 
-### 使用sublime的快速打开文件
+### 编辑器
 
-快捷键
+只允许文本编辑器，不准使用任何IDE
 
-    ctrl + p
+使用sublime的快速打开文件
+
+    ctrl + p（mac是command + T）
 
 在终端里使用subl命令打开文件，（如果是mac，需要安装https://github.com/i5ting/subl）
+
+    subl app.js
+  
+快速定位到某一行
+
+    ctrl + g （mac是command + L）
+
+- [网上找的](http://my.oschina.net/nodeonly/blog/489463)
+
+关于tab配置
+
+```
+{
+    "default_encoding": "UTF-8",
+    "default_line_ending": "unix",
+    "font_size": 10,
+    "rulers":
+    [
+        80
+    ],
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true,
+    "word_wrap": "false"
+}
+```
+### 使用oh-my-zsh
+
+- 官网 http://ohmyz.sh/
+- 代码 https://github.com/robbyrussell/oh-my-zsh
+
+安装步骤
+
+- 先安装zsh
+- 安装oh-my-zsh
+
+以后环境变量在~/.zshrc里
+
+我常用命令
+
+```
+$ zsh_stats 
+     1	1616  16.1616%   git
+     2	1369  13.6914%   npm
+     3	867   8.67087%   cd
+     4	382   3.82038%   node
+     5	374   3.74037%   j
+     6	341   3.41034%   ack
+     7	272   2.72027%   touch
+     8	251   2.51025%   mate
+     9	225   2.25023%   mkdir
+    10	211   2.11021%   rm
+    11	204   2.0402%    open
+    12	194   1.94019%   cat
+    13	160   1.60016%   clone
+    14	153   1.53015%   ls
+    15	143   1.43014%   ava
+    16	139   1.39014%   curl
+    17	100   1.0001%    yarn
+    18	99    0.990099%  wget
+    19	79    0.790079%  g++
+    20	66    0.660066%  ps
+```
 
 ### 安装ack，命令行查找代码
 
@@ -24,11 +118,54 @@ Ubuntu
     
 - Package "ack-grep"
 
+Mac
+
+- brew install ack
+
+### 使用autojump跳转目录
+
+https://github.com/wting/autojump
+
+Linux
+
+    sudo apt-get install autojump
+    
+Mac os
+
+    brew install autojump
+    
+需要修改~/.zshrc里的plugin,修改为
+
+    plugins=(git autojump)
+
+然后
+
+    source ~/.zshrc
+    
+至此，已经完成了安装。
+
+此后cd到任意目录，以后就可以使用j这个直达到某个目录了，下面是示例：
+
+    ➜  nodejs-newbie git:(master) ✗ cd ~/workspace/github/nodejs-newbie
+    ➜  nodejs-newbie git:(master) ✗ cd ~
+    ➜  ~  j nodejs-n
+    /Users/sang/workspace/github/nodejs-newbie
+    ➜  nodejs-newbie git:(master) ✗ 
+  
+如果想玩的更high，可以参见https://github.com/clvv/fasd
+
 ### 使用mongo-express操作mongodb
 
-https://github.com/andzdroid/mongo-express
+<!-- https://github.com/andzdroid/mongo-express -->
 
-欢迎推荐ubuntu下更好的mongo客户端
+<!-- 欢迎推荐ubuntu下更好的mongo客户端 -->
+
+推荐 www.robomongo.org 
+
+- 支持win
+- 支持linux
+- 支持mac（mac10.10下中文乱码，需要robomongo v0.8.5+）
+ 
 
 ### 使用node-inspector调试代码
 
@@ -72,9 +209,11 @@ https://cnodejs.org/topic/55c44f0db98f51142b367b54
 
 - http://zealdocs.org/ (推荐，离线下载)
 
-在dash里默认是没有的；
+有很多doc在dash（mac）里默认是没有的；
 
 see here ： http://kapeli.com/docset_links
+
+如果是下载到本地的docset，放到zealdocs目录下面，需要重启zeal
 
 ### mongo here 
 
@@ -101,6 +240,29 @@ https://github.com/i5ting/mongo-here
 
 详见https://github.com/i5ting/je
 
+### jade
+
+jade学习
+
+- http://jade-lang.com/reference/
+- https://github.com/i5ting/study-jade
+
+html转jade是比较省力的一种方法
+
+使用场景：尤其是写bootstrap的时候，当然静态页面转jade也一样
+
+hade是一个html2jade.org的copy，平常打开这个网站比较慢，索性还是在本地弄一个，用的时候一条命令打开
+
+    [sudo] npm install -g hade
+    hade
+
+好处
+
+- html和jade互转
+- 对于学习jade是比较好的练习
+
+详见https://github.com/i5ting/hade
+
 ### json to csv converter
 
     [sudo] npm install -g j2csv
@@ -108,6 +270,14 @@ https://github.com/i5ting/mongo-here
     
 详见https://github.com/i5ting/json2csv
 
+上面给出的方案适合3000条以内的数据，受限于浏览器
+
+更大量的数据，需要
+
+    [sudo] npm install -g ej
+    ej input.json output.csv
+    
+https://github.com/i5ting/ej
 
 ### kp is a tool for kill process by server port
 
@@ -121,6 +291,8 @@ https://github.com/i5ting/kp
 a node cli tools for uploads ui
 
 https://github.com/i5ting/upload-cli
+
+- 目前已经支持通过命令行`uci`上传，可指定host
 
 ## Contributing
 
